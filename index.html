@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Hello World!</title>
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="hover.css">
+    	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div id="loader-wrapper">
+		    <div id="loader"></div>
+		    <div class="loader-section section-left"></div>
+		    <div class="loader-section section-right"></div>
+		</div>
+		
+		<div id="carpet">
+			<div id="page">
+				<div id="header">
+					<div id="logo" class="tilt">
+					</div>
+				</div>
+				<div id="carouselBox">
+					<span id="prevCar">
+						<p class="fondBlanc"><i class="fa fa-angle-left" aria-hidden="true"></i></p>
+					</span>
+					<span id="nextCar">
+						<p class="fondBlanc"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+					</span>
+					<div id="carousel">
+					    <img class='imgCar' style="display:none" src="http://lorempixel.com/700/200/nature" />
+						<img class='imgCar' style="display:none" src="http://lorempixel.com/700/200/city" />
+						<img class='imgCar' style="display:none" src="http://lorempixel.com/700/200/abstract/" />
+						<img class='imgCar' style="display:none" src="http://lorempixel.com/700/200/food/" />
+						<img class='imgCar' style="display:none" src="http://lorempixel.com/700/200/animals/" />
+					</div>
+				</div>
+				<div id="footer">
+					<div id="footerMenu">
+						<nav class='rotate'>
+							<a id='gh' href="https://github.com/mbusson/practice/tree/master/carousel">
+								<span data-hover="Github">GitHub</span>
+							</a>
+						</nav>
+						<nav class='rotate'>
+							<a id='home' href="../../index.php">
+								<span data-hover="Home">Home</span>
+							</a>
+						</nav>
+						<nav class='rotate'>
+							<a id='cred' href="../../index.php">
+								<span data-hover="Credits">Credits</span>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- on inclut la bibliothèque depuis les serveurs de Google -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="style.js"></script>
+
+	</body>
+</html>
