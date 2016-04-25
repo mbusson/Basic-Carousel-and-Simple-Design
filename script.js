@@ -24,7 +24,7 @@ $('#nextCar').click(function(){
         });
     }
     else{
-        i = 0;
+        i = -1;
     }
     sliderCarousel();
 });
