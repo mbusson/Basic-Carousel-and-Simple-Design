@@ -25,10 +25,23 @@ $(document).ready(function(){
 
 	}); 
 
-	// --- MENU ANIM ---
+// --- MENU ANIM ---
 
 	$('.hoverMenu').hover(function() {
 		$(this).children('span').stop(true, true).slideToggle();
 	});   
+
+// --- OVERLAY ---
+
+	$('#cred').click(function() {
+		$('#overlay').animate({
+	    	height : '310px'
+		}, 400);
+	}); 
+	$('#close-ol').click(function() {
+		$('#overlay').animate({
+	    	height : '0'
+		}, 400);
+	}); 
 
 });

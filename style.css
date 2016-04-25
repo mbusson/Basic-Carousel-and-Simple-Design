@@ -12,6 +12,16 @@ body
 	height: 100%;
 }
 
+/* preparing custom fonts */
+@font-face {
+    font-family: 'ADAM';
+    src: url('fonts/ADAM.otf');
+}
+@font-face {
+    font-family: 'Chelsea';
+    src: url('fonts/Chelsea.ttf');
+}
+
 /* --- PRE-LOADER (cf. style.js)--- */
 
 #loader-wrapper {
@@ -145,10 +155,49 @@ body
 .no-js #loader-wrapper {
     display: none;
 }
-.no-js h1 {
-    color: #FEF4C5;
-}
 
+
+/* --- CREDITS OVERLAY--- */
+
+#overlay {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 500;
+    background-color: rgba(0,0,0,0.9);
+    overflow: hidden;
+}
+#ol-contents {
+	z-index: 501;
+	color: #FFF8FA;
+	font-size: 24px;
+	font-family: Chelsea;
+	padding: 0.5%;
+	line-height: 145%;
+}
+#ol-contents p {
+	text-decoration: none;
+	color: #FFFDF6;
+	text-align: center
+}
+#ol-contents a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#ol-contents a:hover {
+	color: #C0B16E;
+}
+a.close-ol {
+	display: inline-block;
+	position: absolute;
+	top: 25px;
+	right: 65px;
+	color: #FFF8FA;
+	font-size: 48px;
+	cursor:pointer;
+}
 
 
 /* --- PAGE --- */
@@ -197,16 +246,6 @@ body
 	margin-right: auto ;
 	margin-top: auto ;
 	margin-bottom: auto ;
-}
-
-/* preparing custom fonts */
-@font-face {
-    font-family: 'ADAM';
-    src: url('fonts/ADAM.otf');
-}
-@font-face {
-    font-family: 'Chelsea';
-    src: url('fonts/Chelsea.ttf');
 }
 
 #footer {
@@ -312,6 +351,7 @@ nav {
 .rotate a:focus span::before {
 	background: #A09048;	
 }
+
 
 /* --- CAROUSEL (cf. script.js)--- */
 

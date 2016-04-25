@@ -3,7 +3,6 @@
 	<head>
     	<title>Hello World!</title>
     	<link rel="stylesheet" href="style.css">
-    	<link rel="stylesheet" href="hover.css">
     	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	</head>
 
@@ -12,6 +11,17 @@
 		    <div id="loader"></div>
 		    <div class="loader-section section-left"></div>
 		    <div class="loader-section section-right"></div>
+		</div>
+		<div id="overlay">
+			<div id="ol-contents">
+				<a class='close-ol' id='close-ol'>&times;</a>
+				<p>
+					A basic static website template using HTML5, CSS3 and JavaScript / jQuery.<br><br>
+					Photographs by <a href="http://sarabbit.openphoto.net/">Sarah Klockars-Clauser</a> and <a href="http://oldtimeynerd.net/">Michael Jastremski</a>.<br><br>
+					This work includes some of <a href="https://fortawesome.github.io/Font-Awesome/">Font-Awesome</a>'s icons that I used for the carousel's controls.<br><br>
+					The "Random Logo" was generated online and is the courtesy of <a href="https://www.hipsterlogogenerator.com/">HipsterLogoGenerator</a>.<br><br>
+				</p>
+			</div>
 		</div>
 		
 		<div id="carpet">
@@ -31,7 +41,6 @@
 					    <img class='imgCar' style="display:none" src="photos/pic1.jpg" />
 						<img class='imgCar' style="display:none" src="photos/pic2.jpg" />
 						<img class='imgCar' style="display:none" src="photos/pic3.jpg" />
-						<img class='imgCar' style="display:none" src="photos/pic5.jpg" />
 						<img class='imgCar' style="display:none" src="photos/pic6.jpg" />
 						<img class='imgCar' style="display:none" src="photos/pic7.jpg" />
 					</div>
@@ -39,25 +48,20 @@
 				<div id="footer">
 					<div id="footerMenu">
 						<nav class='rotate'>
-							<a id='gh' href="https://github.com/mbusson/practice/tree/master/carousel">
+							<a id='gh' href="javascript:" onclick="window.open('https://github.com/mbusson/Basic-Carousel-and-Simple-Design');" target="_blank">
 								<span data-hover="Github">GitHub</span>
 							</a>
 						</nav>
 						<nav class='rotate'>
-							<a id='home' href="../../index.php">
+							<a id='home' href="../index.php">
 								<span data-hover="Home">Home</span>
 							</a>
 						</nav>
 						<nav class='rotate'>
-							<a id='cred' href="../../index.php">
+							<a href="#" id="cred">
 								<span data-hover="Credits">Credits</span>
-							</a>
+							</span>
 						</nav>
-					</div>
-					<div id="credDisp">
-						<p><h1>Credits:</h1>
-						Photographs by Sarah Klockars-Clauser and Michael Jastremski.
-						</p>
 					</div>
 				</div>
 			</div>
